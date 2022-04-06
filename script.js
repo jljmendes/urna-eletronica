@@ -88,3 +88,6 @@ function branco() {
     descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>';
     lateral.innerHTML = '';
 }
+function corrige() {
+    comecarEtapa();
+}

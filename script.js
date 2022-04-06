@@ -62,3 +62,18 @@ function atualizaInterface() {
         descricao.innerHTML = '<div class="aviso--grande pisca">VOTO NULO</div>';
     }
 }
+
+function clicou(n) {
+    let elNumero = document.querySelector('.numero.pisca');
+    if(elNumero !== null) {
+        elNumero.innerHTML = n;
+        numero = `${numero}${n}`;
+
+        elNumero.classList.remove('pisca');
+        if(elNumero.nextElementSibling !== null) {
+            elNumero.nextElementSibling.classList.add('pisca');
+        } else {
+            atualizaInterface();
+        }
+    }
+}

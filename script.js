@@ -91,3 +91,32 @@ function branco() {
 function corrige() {
     comecarEtapa();
 }
+function confirma() {
+    let etapa = etapas[etapaAtual];
+
+    let votoConfirmado = false;
+
+    if(votoBranco === true) {
+        votoConfirmado = true;
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: 'branco'
+        });
+    } else if(numero.length === etapa.numeros) {
+        votoConfirmado = true;
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: numero
+        });
+    }
+
+    if(votoConfirmado) {
+        etapaAtual++;
+        if(etapas[etapaAtual] !== undefined) {
+            comecarEtapa();
+        } else {
+            document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM</div>';
+            console.log(votos);
+        }
+    }
+}

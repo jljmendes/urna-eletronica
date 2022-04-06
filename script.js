@@ -77,3 +77,14 @@ function clicou(n) {
         }
     }
 }
+
+function branco() {
+    numero = '';
+    votoBranco = true;
+
+    seuVotoPara.style.display = 'block';
+    aviso.style.display = 'block';
+    numeros.innerHTML = '';
+    descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>';
+    lateral.innerHTML = '';
+}

@@ -24,3 +24,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+.teclado {
+    margin-left: 30px;
+    background-color: #403A3A;
+}

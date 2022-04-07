@@ -28,3 +28,8 @@ body {
     margin-left: 30px;
     background-color: #403A3A;
 }
+.teclado--linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

@@ -21,3 +21,30 @@ let etapas = [
             },
         ]
     },
+    {
+        titulo: 'PREFEITO',
+        numeros: 2,
+        candidatos: [
+            {
+                numero: '41',
+                nome: 'Jorge',
+                partido: 'ABC',
+                vice: 'Joc',
+                fotos:[
+                    {url:'99.jpg', legenda: 'Prefeito'},
+                    {url:'99_2.jpg', legenda: 'Vice-Prefeito', small: true}
+                ]
+            },
+            {
+                numero: '28',
+                nome: 'Gleice',
+                partido: 'QWERTY',
+                vice: 'Geu',
+                fotos:[
+                    {url:'84.jpg', legenda: 'Prefeito'},
+                    {url:'84_2.jpg', legenda: 'Vice-Prefeito', small: true}
+                ]
+            },
+        ]
+    }
+];
